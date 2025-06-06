@@ -2,6 +2,7 @@
 
 - 📫 How to reach me:
   - @mikedorado
+  - [LinkedIn](https://www.linkedin.com/in/mike-dorado/)
   - mikedorado@gmail.com
  
 ----
