@@ -1,0 +1,71 @@
+<svg viewBox="0 0 1200 150" width="1200" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dawn over a glowing grid horizon — Optimism, engineered.">
+  <defs>
+    <linearGradient id="fbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#02070F"/>
+      <stop offset="60%" stop-color="#081729"/>
+      <stop offset="100%" stop-color="#10263F"/>
+    </linearGradient>
+    <linearGradient id="fGoldGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFE9B8"/>
+      <stop offset="100%" stop-color="#D9A441"/>
+    </linearGradient>
+    <linearGradient id="fHorizFade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FFD98A" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#FFD98A" stop-opacity="1"/>
+      <stop offset="80%" stop-color="#FFD98A" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#FFD98A" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="fDawn" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFCF8A" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#E8A24B" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="ffGold" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="card"><rect width="1200" height="150" rx="14"/></clipPath>
+    <clipPath id="skyClip"><rect x="0" y="0" width="1200" height="104"/></clipPath>
+    <pattern id="fscan" width="8" height="4" patternUnits="userSpaceOnUse">
+      <rect width="8" height="1" fill="#9FE8E0" opacity="0.03"/>
+    </pattern>
+    <style><![CDATA[
+      @keyframes fpulse { from { transform: scale(1); opacity: 0.75; } to { transform: scale(1.06); opacity: 1; } }
+      .dawnRings { animation: fpulse 5s ease-in-out infinite alternate; transform-origin: 600px 104px; }
+      @keyframes fferry { from { transform: translateX(-70px); } to { transform: translateX(1290px); } }
+      .fferry { animation: fferry 23s linear infinite; }
+    ]]></style>
+  </defs>
+  <g clip-path="url(#card)">
+    <rect width="1200" height="150" fill="url(#fbg)"/>
+    <ellipse cx="600" cy="104" rx="420" ry="62" fill="url(#fDawn)"/>
+    <!-- rising ring emblem at the horizon -->
+    <g class="dawnRings" clip-path="url(#skyClip)">
+      <circle cx="600" cy="104" r="18" fill="none" stroke="#FFD98A" stroke-width="1.2" opacity="0.85"/>
+      <circle cx="600" cy="104" r="30" fill="none" stroke="#7FD4CE" stroke-width="1" opacity="0.5"/>
+      <circle cx="600" cy="104" r="42" fill="none" stroke="#E8B054" stroke-width="0.9" opacity="0.35"/>
+      <circle cx="600" cy="104" r="54" fill="none" stroke="#7FD4CE" stroke-width="0.8" opacity="0.2"/>
+    </g>
+    <!-- grid floor -->
+    <g stroke="#3FA9A0">
+      <path d="M600 104 L-140 150" opacity="0.2" stroke-width="1"/>
+      <path d="M600 104 L45 150" opacity="0.26" stroke-width="1"/>
+      <path d="M600 104 L230 150" opacity="0.32" stroke-width="1"/>
+      <path d="M600 104 L415 150" opacity="0.38" stroke-width="1.1"/>
+      <path d="M600 104 L600 150" opacity="0.42" stroke-width="1.1"/>
+      <path d="M600 104 L785 150" opacity="0.38" stroke-width="1.1"/>
+      <path d="M600 104 L970 150" opacity="0.32" stroke-width="1"/>
+      <path d="M600 104 L1155 150" opacity="0.26" stroke-width="1"/>
+      <path d="M600 104 L1340 150" opacity="0.2" stroke-width="1"/>
+      <line x1="0" y1="118" x2="1200" y2="118" opacity="0.3" stroke-width="0.7"/>
+      <line x1="0" y1="134" x2="1200" y2="134" opacity="0.4" stroke-width="1"/>
+    </g>
+    <line x1="0" y1="104" x2="1200" y2="104" stroke="url(#fHorizFade)" stroke-width="5" opacity="0.2"/>
+    <line x1="0" y1="104" x2="1200" y2="104" stroke="url(#fHorizFade)" stroke-width="1.3" opacity="0.9" filter="url(#ffGold)"/>
+    <g class="fferry"><line x1="-40" y1="101" x2="-5" y2="101" stroke="#7FD4CE" stroke-width="1" opacity="0.35"/><circle cx="0" cy="101" r="2" fill="#FFD98A"/></g>
+    <!-- the motto -->
+    <text x="600" y="52" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-style="italic" font-size="22" fill="url(#fGoldGrad)" filter="url(#ffGold)">Optimism, engineered.</text>
+    <text x="600" y="78" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="10" letter-spacing="4" fill="#7FD4CE" opacity="0.6">MIKE DORADO ⟡ AI AGENTS ⟡ CLOUD ⟡ COMMUNITY</text>
+    <rect width="1200" height="150" fill="url(#fscan)"/>
+    <rect width="1200" height="150" rx="14" fill="none" stroke="#122A44" stroke-width="1.5"/>
+  </g>
+</svg>
