@@ -57,7 +57,7 @@ I build **agentic AI systems** and the **cloud infrastructure** they run on — 
 ## 📊 Activity
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mikedorado&bg_color=0A1626&color=7FD4CE&line=FFD98A&point=FF9066&area=true&area_color=123B4A&hide_border=true&custom_title=Contribution%20Activity&radius=10" width="100%" alt="Contribution activity graph" />
+  <img height="195" src="https://raw.githubusercontent.com/mikedorado/mikedorado/output/telemetry.svg" alt="Grid telemetry — contributions, pull requests, public repos, followers" />
 </div>
 
 <br/>
@@ -90,6 +90,9 @@ I build **agentic AI systems** and the **cloud infrastructure** they run on — 
   · hero/divider/footer are self-contained animated SVGs (CSS + SMIL, no JS, no external fonts)
   · palette: deep-sea blues (#02070F–#122A44), aqua glass (#7FD4CE), warm gold (#FFD98A/#E8B054)
   · scripts/telemetry.mjs renders in-house stats cards daily (via .github/workflows/snake.yml);
-    not shown in the README yet — re-add the output-branch images once public activity grows
+    the telemetry card is shown in Activity — zero-count rows are filtered out until they grow.
+    languages.svg is generated but still shelved (public repos skew to forked notebooks)
+  · Activity replaced the github-readme-activity-graph.vercel.app embed on 2026-08-27 after it
+    started returning HTTP 402 — self-hosted telemetry has no external dependency to fail
   · the contribution serpent regenerates daily from the same workflow
 -->

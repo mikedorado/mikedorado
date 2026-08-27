@@ -90,18 +90,20 @@ const card = (title, body) => `<svg viewBox="0 0 420 195" width="420" height="19
 </svg>`;
 
 // ── telemetry card ───────────────────────────────────────────────────
+// Raw values so we can drop zero-count rows before rendering (keeps the card
+// from advertising STARS: 0 / ISSUES: 0 while public activity is still thin).
 const rows = [
-  ["✦", "STARS COLLECTED", num(stars)],
-  ["Ψ", "PUBLIC REPOS", num(u.repositories.totalCount)],
-  ["Δ", "PULL REQUESTS", num(u.pullRequests.totalCount)],
-  ["◍", "ISSUES RAISED", num(u.issues.totalCount)],
-  ["⟡", "FOLLOWERS", num(u.followers.totalCount)],
-];
+  ["✦", "STARS COLLECTED", stars],
+  ["Ψ", "PUBLIC REPOS", u.repositories.totalCount],
+  ["Δ", "PULL REQUESTS", u.pullRequests.totalCount],
+  ["◍", "ISSUES RAISED", u.issues.totalCount],
+  ["⟡", "FOLLOWERS", u.followers.totalCount],
+].filter(([, , v]) => v > 0);
 const rowsSvg = rows.map(([glyph, label, value], i) => {
   const y = 72 + i * 24;
   return `<text x="26" y="${y}" font-family="${MONO}" font-size="13" fill="${P.aqua}">${glyph}</text>
     <text x="48" y="${y}" font-family="${MONO}" font-size="12" letter-spacing="1.5" fill="${P.text}">${label}</text>
-    <text x="250" y="${y}" text-anchor="end" font-family="${MONO}" font-size="13" font-weight="bold" fill="${P.gold}">${value}</text>`;
+    <text x="250" y="${y}" text-anchor="end" font-family="${MONO}" font-size="13" font-weight="bold" fill="${P.gold}">${num(value)}</text>`;
 }).join("\n");
 
 // ring dial: contributions in the last year
