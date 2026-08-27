@@ -19,7 +19,10 @@ jobs:
       - name: Render in-house telemetry cards
         run: node scripts/telemetry.mjs
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # PROFILE_STATS_TOKEN is an optional classic PAT (repo + read:user) so the
+          # card can count private PRs/contributions. Falls back to the default
+          # token (public data only) when the secret isn't set — nothing breaks.
+          GITHUB_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
           OUT_DIR: dist
 
       - name: Generate snake in Neo-Atlantis palette

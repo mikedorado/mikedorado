@@ -8,10 +8,11 @@
 
 I build **agentic AI systems** and the **cloud infrastructure** they run on — and I'm an optimist about where software is taking us.
 
-- ⚡ Founder @ **RawrTech LLC** — AI agents & cloud engineering
-- 🤝 Co-organizer of the **Copilot Collective** — an Irvine, CA community for Microsoft Copilot builders
+- ⚡ Founder @ **[RawrTech.ai](https://rawrtech.ai)** — AI agents & cloud engineering
+- 🤝 Co-organizer of **[Copilot Collective O.C.](https://www.linkedin.com/company/copilot-collective-oc)** — an Irvine, CA community for Microsoft Copilot builders
 - 🧠 Currently: multi-agent systems on the **Claude Agent SDK**, plus an **NVIDIA DGX Spark** homelab
 - 🚀 A few ventures in stealth — launching soon
+- 💼 Let's connect on **[LinkedIn](https://www.linkedin.com/in/mike-dorado/)**
 
 <div align="center">
   <img src="assets/divider.svg" width="100%" alt="" />
@@ -35,6 +36,15 @@ I build **agentic AI systems** and the **cloud infrastructure** they run on — 
   <img src="https://img.shields.io/badge/Claude_Agent_SDK-0A1626?style=for-the-badge&logo=anthropic&logoColor=FFD98A" alt="Claude Agent SDK" />
   <img src="https://img.shields.io/badge/GitHub_Copilot-0A1626?style=for-the-badge&logo=githubcopilot&logoColor=FFD98A" alt="GitHub Copilot" />
   <img src="https://img.shields.io/badge/NVIDIA_DGX-0A1626?style=for-the-badge&logo=nvidia&logoColor=FFD98A" alt="NVIDIA DGX" />
+</p>
+
+**Model serving**
+
+<p>
+  <img src="https://img.shields.io/badge/Ollama-0A1626?style=for-the-badge&logo=ollama&logoColor=FFD98A" alt="Ollama" />
+  <img src="https://img.shields.io/badge/vLLM-0A1626?style=for-the-badge&logo=vllm&logoColor=FFD98A" alt="vLLM" />
+  <img src="https://img.shields.io/badge/LiteLLM-0A1626?style=for-the-badge&logoColor=FFD98A" alt="LiteLLM" />
+  <img src="https://img.shields.io/badge/Hugging_Face-0A1626?style=for-the-badge&logo=huggingface&logoColor=FFD98A" alt="Hugging Face" />
 </p>
 
 **Cloud & infrastructure**
